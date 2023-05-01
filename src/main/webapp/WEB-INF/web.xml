@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>com.MVC_1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>RegisterAction</servlet-name>
+  	<servlet-class>RegisterAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RegisterAction</servlet-name>
+  	<url-pattern>/RegisterAction</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>LoginAction</servlet-name>
+  	<servlet-class>LoginAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginAction</servlet-name>
+  	<url-pattern>/LoginAction</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>FetchProfile</servlet-name>
+  	<servlet-class>FetchProfile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FetchProfile</servlet-name>
+  	<url-pattern>/FetchProfile</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  	<servlet-name>endSer</servlet-name>
+  	<servlet-class>endSer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>endSer</servlet-name>
+  	<url-pattern>/endSer</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+  	<servlet-name>ForgotPassword</servlet-name>
+  	<servlet-class>ForgotPassword</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ForgotPassword</servlet-name>
+  	<url-pattern>/ForgotPassword</url-pattern>
+  </servlet-mapping>
+</web-app>
